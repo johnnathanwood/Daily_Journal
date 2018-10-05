@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Daily Journal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/journal.css" />
-    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
+
+
+    <div class="box">
+        <div class="inner">
+            <span>Hello World</span>
+        </div>
+        <div class="inner">
+            <span>Daily Journal</span>
+        </div>
+    </div>
 <body>
+    <br><br>
     <div>
-    <form class="journalForm" action="">
-    
+        <form class="journalForm" action="">
+
             <label for="journalDate">Date of Entry</label>
-                <input type="date" name="journalDate" id="journalDate">
-                <br><br>
+            <input type="date" name="journalDate" id="journalDate">
+            <br><br>
             <label for="journalConcepts">Concepts covered</label>
-                <input type="text" required="" name="journalConcepts" id="journalConcepts">
+            <input type="text" required="" name="journalConcepts" id="journalConcepts">
             <label for="journalEntry">Journal Entry</label>
-                <input type="text" required="" name="journalEntry" id="journalEntry">
+            <input type="text" required="" name="journalEntry" id="journalEntry">
             <label for="journalMood">Mood for the Day</label>
-                <select required="" name="journalMood" id="journalMood">
-                    <option value="Happy">Happy</option>
-                    <option value="Sad">Sad</option>
-                    <option value="Eh">Eh</option>
-                    <option value="I hate the world">I hate the world</option>
-        
-                    <input type="submit" value="Submit">
-    </form>
-</div>
-    
-    
+            <select required="" name="journalMood" id="journalMood">
+                <option value="Happy">Happy</option>
+                <option value="Sad">Sad</option>
+                <option value="Eh">Eh</option>
+                <option value="I hate the world">I hate the world</option>
+
+                <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
 </body>
+
 </html>
