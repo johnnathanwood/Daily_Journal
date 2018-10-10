@@ -1,9 +1,9 @@
 
 
 div {
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 16px;
 }
 
 input[type=text], select {
@@ -187,3 +187,4 @@ html {
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
+
