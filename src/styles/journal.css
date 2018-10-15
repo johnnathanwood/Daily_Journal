@@ -1,9 +1,9 @@
 
 
 div.box {
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #f2f2f2;
-	padding: 16px;
+	padding: 2px;
 	margin: auto;
 }
 
@@ -124,8 +124,8 @@ body {
 
 .box .inner {
 	width: 400px;
-	height: 200px;
-	line-height: 200px;
+	height: 129px;
+	line-height: 140px;
 	font-size: 4em;
 	font-family: sans-serif;
 	font-weight: bold;
@@ -203,6 +203,42 @@ html {
     height: 25px; /* Slider handle height */
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
+}
+
+button {
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 0px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button:after {
+    content: "";
+    background: lightgreen;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 
