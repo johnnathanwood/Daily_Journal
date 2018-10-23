@@ -1,5 +1,5 @@
-let database = require("./ContactCollection");
-let contactList = require("./ContactList");
+let database = require("./entryCollection");
+let entryList = require("./entryList");
 
 let form = document.getElementById("form");
 let entryForm;
@@ -7,19 +7,20 @@ let entryForm;
 
 function addEntry(event){
     event.preventDefault();
-    let customer = {
+    let journal = {
         concept: document.getElementById("journalConcepts").value,
         date: document.getElementById("journalDate").value,
-        journal: document.getElementById("journalMood").value,
+        journal: document.getElementById("journalEntry").value,
         mood: document.getElementById("journalMood").value
     };
     entryForm.reset();
-    database.addEntry(customer);
+    database.addEntry(journal);
     entryList();
 }
 
 function populateForm(){
-form.innerHTML = `
+
+    form.innerHTML = `
     <div class="journal">
         <form class="journalForm" id="journal-form" action="">
 
@@ -34,7 +35,7 @@ form.innerHTML = `
             <label for="journalEntry">Journal Entry</label>
             <input type="text" name="journalEntry" id="journalEntry">
             <label for="journalMood">Mood for the Day</label>
-            <div class="container">
+            <div class="container" id="journalMood">
                 <input type="button" class="button" value="Normal">
                 <input type="button" class="button" value="Happy">
                 <input type="button" class="button" value="Stressed">

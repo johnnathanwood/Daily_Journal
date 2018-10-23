@@ -1,11 +1,11 @@
-let createContact = require("./Contact");
-let database = require("./ContactCollection");
+let createEntry = require("./entry");
+let database = require("./entryCollection");
 
 //1. get contacts from LS (which is in our other module)
 //2. iterate over them
 //2.5 where should we put it?
 //3. render them to the DOM
-let outputEl = document.querySelector("#contactList");
+let outputEl = document.querySelector("#entriesList");
 
 
 function listEntries(){
