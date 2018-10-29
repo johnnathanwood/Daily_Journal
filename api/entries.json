@@ -1,7 +1,10 @@
 {
     "entries": [
         {
-        "concept": "pizza"
+        "date": "October 29, 2018",
+        "concept": "pizza",
+        "journal": "test",
+        "mood": "Happy"
         }
     ]
     }
