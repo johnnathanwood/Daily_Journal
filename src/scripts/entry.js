@@ -7,4 +7,3 @@ function createEntry(date, concept, journal, mood){
             <p>${mood}</p>`;
 }
 
-module.exports = createEntry;

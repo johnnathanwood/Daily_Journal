@@ -32,8 +32,14 @@ let database = Object.create(null, {
             localStorage.setItem("entries", JSON.stringify(entries));
             this.entries = this.getDatabase();
         }
+    },
+
+    constAPI: {
+        getEntries: function () {
+            return fetch("http://localhost:3000/entries")
+                .then(response => response.json())
+        }
     }
 });
 
 
-module.exports = database;

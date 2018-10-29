@@ -1,9 +1,3 @@
-let database = require("./entryCollection");
-let entryList = require("./entryList");
-
-let form = document.getElementById("form");
-let entryForm;
-
 
 function addEntry(event){
     event.preventDefault();
@@ -50,4 +44,3 @@ function populateForm(){
     document.getElementById("add-entry").addEventListener("click", addEntry);
 }
 
-module.exports = populateForm;
